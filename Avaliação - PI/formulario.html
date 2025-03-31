@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title> Formulario </title>
+</head>
+<style>
+    body{
+        background-image: url(Imagens/fundo2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:left;
+    }
+
+</style>
+<body>
+    <H1>Formulario de contato</H1>
+    <nav>
+        <p> <li> <a href="Inicial.html">Pagina inicial <br> </li>
+        <li> <a href="tecnologias.html">Tecnologias</a><br> </li>
+        <li><a href="explicação.html">Explicação</a></li>
+       </p>
+    </nav>
+    <form action="nnsei.php">
+        <H4><label for="fullname">Nome completo:</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+    </form>
+        <form action="datefield.php">
+            <label for="aniversario">Data de Nascimento:</label>
+            <input type="date" id="aniversario" name="aniversario" required><br><br>
+        </form>
+        <form action="genero.php">
+            <input type="radio" id="Masculino" name="genero" value="Masculino"required>
+            <label for="Masculino">Masculino</label><br>
+
+            <input type="radio" id="Feminino" name="genero" value="Feminino" required>
+            <label for="Masculino">Feminino</label><br>
+
+            <input type="radio" id="Outro" name="genero" value="Outro" required>
+            <label for="Outro">Outro</label><br><br>
+        </form>
+        <form action="email"d>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+        </form>
+        <form action="numero.php">
+            <label for="telefone">Telefone (com DDD):</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="Ex: (11) 91234-5678" required><br><br>
+        </form>
+        <form action="msg.php">
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+        </form>
+        <form onsubmit="window.location.href='Final.html'; return false;">
+            <input type="submit" value="Enviar">
+    </H4>
+    <section></section>
+</body>
